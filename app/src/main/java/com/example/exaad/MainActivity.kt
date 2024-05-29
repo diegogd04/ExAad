@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.exaad.login.data.UserDataRepository
 import com.example.exaad.login.data.local.sharedPreferences.UserSharedPreferencesDataSource
 import com.example.exaad.login.domain.User
+import androidx.room.Room
+import com.example.exaad.animals.data.local.room.AppDataBase
 import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
@@ -52,6 +54,14 @@ class MainActivity : AppCompatActivity() {
     private fun initAnimals() {
         thread {
             //Ejecutar código para obtener animales
+
+            val db = Room.databaseBuilder(
+                applicationContext,
+                AppDataBase::class.java, "animals-database"
+            ).build()
+
+            val animalDao = db.animalDao()
+
         }
     }
 

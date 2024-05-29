@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "681232482301",
+    "project_id": "exadd-92534",
+    "storage_bucket": "exadd-92534.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681232482301:android:8a8aa12cce2cb8d50ba394",
+        "android_client_info": {
+          "package_name": "com.example.exaad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbJNJ7A98xIh2BT29thZIjEmJ-krqBdtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
