@@ -7,7 +7,8 @@ import com.example.exaad.login.domain.UserRepository
 
 class UserDataRepository(private val local: UserSharedPreferencesDataSource) : UserRepository {
     override fun set(user: User) {
-        if (user.email.isNullOrEmpty() && user.password.isNullOrEmpty()) {
+        val userSave = local.get()
+        if (userSave.email.isNullOrEmpty() && userSave.password.isNullOrEmpty()) {
             local.set(user)
         }
         Log.d("@DEV", "Email= ${user.email} Password= ${user.password}")
